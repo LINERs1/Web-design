@@ -1,0 +1,149 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 960px;
+  min-height: 100vh;
+  
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  min-height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+main {
+  flex: 1;
+}
+
+p {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+hr.double {
+  border-top: 3px double black;
+  border-bottom: none;
+}
+
+.infobox,
+.infobox caption {
+  font-size: 110%;
+}
+
+.infobox caption,
+.infobox .alter-bg,
+.infobox .horizontal-list {
+  text-align: center;
+}
+
+.infobox-image {
+  vertical-align: top;
+}
+
+.infobox-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infobox {
+  float: right;
+  width: 25%;
+  margin-left: 2em;
+  padding: .5rem;
+  border: 1px solid black;
+  background-color: rgba(251, 241, 199, .5);
+}
+
+.infobox,
+.first-paragraph {
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 768px)   {
+  .infobox {
+    width:100%;   
+    float:none;
+    margin-left: 0;
+  }
+
+}
+
+.infobox {
+  text-align: left;
+}
+
+.infobox td,
+.infobox th {
+  vertical-align: baseline;
+}
+
+.infobox .alter-bg {
+  padding: .5rem;
+  background-color: rgba(93, 148, 150, .5);
+}
+
+.infobox .horizontal-list ul {
+  padding: 0;
+}
+
+.infobox .horizontal-list ul li {
+  display: inline-block;
+}
+
+.infobox .horizontal-list ul li::after {
+  content: '\2022';
+  padding-left: .25em;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color:black;
+}
+
+
+.icon-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  border-radius: 50%;
+  
+  padding: .5rem;
+  margin-right: 1.5rem;
+}
+
+.icon-button:hover,
+.icon-button:active {
+  background-color: gainsboro;
+}
+
+.standart-icon {
+  width: 100%;
+  height: 100%;
+}
